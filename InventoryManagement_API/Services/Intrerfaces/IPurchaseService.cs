@@ -1,0 +1,11 @@
+﻿using InventoryManagement_API.DTOS.PurchaseDTOs;
+
+namespace InventoryManagement_API.Services.Intrerfaces
+{
+    public interface IPurchaseService
+    {
+        Task<List<PurchaseDtos>> GetAllAsync();
+        Task<PurchaseDtos> CreateAsync(CreatePurchase dto);
+        Task<PurchaseDtos> GetByIdAsync(int id);
+    }
+}
